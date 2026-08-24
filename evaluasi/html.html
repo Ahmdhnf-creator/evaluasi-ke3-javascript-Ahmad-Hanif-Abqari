@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div class="blok1">
+      <div class="kiriblok1">
+        <img src="image/evnt.png" />
+        <div class="tkskiriblok1">
+          <h1>EVENT REGISTRATION</h1>
+          <p>Daftar & Kelola Peserta Event dengan Mudah</p>
+        </div>
+      </div>
+
+      <div class="kananblok1">
+        <div class="tkskananblok1">
+          <p>Total Peserta</p>
+          <h1>0</h1>
+        </div>
+        <img src="image/grub.png" />
+      </div>
+    </div>
+
+    <div class="induk2dan3">
+      <div class="blok2">
+        <p class="judulblok2">📝 FORM PENDAFTARAN</p>
+
+        <form id="formpendaftaran">
+          <div class="nama">
+            <label for="nama">Nama</label>
+            <input
+              type="text"
+              id="nama"
+              placeholder="Masukan nama lengkap"
+              autofocus
+            />
+            <div class="jumlahkarakter" id="jumlahkarakter">
+              Jumlah karakter: 0
+            </div>
+            <div class="enter" id="enter"></div>
+          </div>
+
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukan email aktif" />
+          </div>
+
+          <div class="event">
+            <label for="event">Event</label>
+
+            <select id="event">
+              <option value="">Pilih event yang tersedia</option>
+              <option value="Seminar JavaScript">Seminar JavaScript</option>
+              <option value="Workshop Web Development">
+                Workshop Web Development
+              </option>
+              <option value="Tech Conference">Tech Conference</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+            </select>
+          </div>
+
+          <div class="btninduk">
+            <button type="submit" class="btn btn-primary">
+              Daftar Sekarang
+            </button>
+            <button type="button" id="resetbtn" class="btn btn-secondary">
+              Reset Form
+            </button>
+          </div>
+
+          <div id="informasiform" class="informasiform"></div>
+        </form>
+      </div>
+      <div class="blok3">
+        <div class="judulblok3">
+          <span>👥 DAFTAR PESERTA</span>
+          <button type="button" id="hapussemua" class="hapussemua">
+            Hapus Semua
+          </button>
+        </div>
+
+        <div id="partisiper">
+          <p class="tulisankosong">Belum ada peserta.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

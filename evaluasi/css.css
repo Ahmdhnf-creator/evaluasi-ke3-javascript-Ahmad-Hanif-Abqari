@@ -1,0 +1,671 @@
+/* ===============================
+   UNIVERSAL
+================================ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ===============================
+   BODY
+================================ */
+
+body {
+  background-color: #eef3fd;
+  padding: 17px;
+}
+
+
+/* ===============================
+   BLOK 1
+================================ */
+
+.blok1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  background-color: #131736;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(19, 23, 54, 0.15);
+}
+
+
+/* ===============================
+   BLOK 1 KIRI
+================================ */
+
+.kiriblok1 {
+  display: flex;
+  align-items: center;
+}
+
+.kiriblok1 img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.tkskiriblok1 {
+  margin-left: 17px;
+}
+
+.tkskiriblok1 h1 {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.tkskiriblok1 p {
+  color: white;
+  font-size: 16px;
+}
+
+
+/* ===============================
+   BLOK 1 KANAN
+================================ */
+
+.kananblok1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 225px;
+
+  background-color: #34377b;
+
+  padding: 17px 20px;
+
+  border-radius: 10px;
+}
+
+.kananblok1 img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.tkskananblok1 p {
+  color: white;
+  margin-bottom: 3px;
+}
+
+.tkskananblok1 h1 {
+  color: white;
+  font-size: 30px;
+}
+
+
+/* ===============================
+   INDUK BLOK 2 & 3
+================================ */
+
+.induk2dan3 {
+  display: flex;
+  gap: 17px;
+
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 17px auto 0;
+}
+
+
+/* ===============================
+   BLOK 2
+================================ */
+
+.blok2 {
+  background-color: white;
+
+  width: 40%;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  min-height: 520px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ===============================
+   JUDUL BLOK 2
+================================ */
+
+.judulblok2 {
+  font-weight: bold;
+  color: #3345d2;
+  font-size: 23px;
+}
+
+
+/* ===============================
+   FORM
+================================ */
+
+#formpendaftaran {
+  margin-top: 25px;
+}
+
+
+/* ===============================
+   LABEL
+================================ */
+
+.nama label,
+.email label,
+.event label {
+  display: block;
+
+  font-weight: 700;
+
+  margin-bottom: 7px;
+
+  color: #111;
+}
+
+
+/* ===============================
+   INPUT
+================================ */
+
+.nama,
+.email,
+.event {
+  width: 100%;
+}
+
+.email,
+.event {
+  margin-top: 18px;
+}
+
+.event select {
+  width: 100%;
+  height: 42px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+  border: 1px solid #d0d5e2;
+
+  outline: none;
+
+  background-color: white;
+
+  color: #555;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.event select:focus {
+  border-color: #3345d2;
+
+  box-shadow:
+    0 0 0 3px rgba(51, 69, 210, 0.12);
+}
+
+
+.nama input,
+.email input,
+.event input {
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  border: 1px solid #aaa;
+
+  outline: none;
+
+  font-size: 15px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* INPUT FOCUS */
+
+.nama input:focus,
+.email input:focus,
+.event input:focus {
+  border-color: #3345d2;
+
+  box-shadow:
+    0 0 0 3px rgba(51, 69, 210, 0.12);
+}
+
+
+/* PLACEHOLDER */
+
+.nama input::placeholder,
+.email input::placeholder,
+.event input::placeholder {
+  color: #888;
+}
+
+
+/* ===============================
+   JUMLAH KARAKTER
+================================ */
+
+.jumlahkarakter {
+  margin-top: 7px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #3345d2;
+}
+
+
+/* ===============================
+   PESAN ENTER
+================================ */
+
+.enter {
+  margin-top: 5px;
+
+  font-size: 13px;
+
+  color: #555;
+}
+
+
+/* ===============================
+   BUTTON INDUK
+================================ */
+
+.btninduk {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+
+/* ===============================
+   BUTTON UMUM
+================================ */
+
+.btn {
+  padding: 11px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+/* ===============================
+   BUTTON PRIMARY
+================================ */
+
+.btn-primary {
+  background-color: #3345d2;
+
+  color: white;
+
+  box-shadow:
+    0 4px 10px rgba(51, 69, 210, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #2636bd;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 15px rgba(51, 69, 210, 0.3);
+}
+
+
+/* ===============================
+   BUTTON SECONDARY
+================================ */
+
+.btn-secondary {
+  background-color: #f1f2f6;
+
+  color: #333;
+
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background-color: #e5e6eb;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ===============================
+   INFORMASI FORM
+================================ */
+
+.informasiform {
+  margin-top: 15px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* BERHASIL */
+
+.informasiform.success {
+  color: #16803c;
+}
+
+
+/* ERROR */
+
+.informasiform.error {
+  color: #d62828;
+}
+
+
+/* ===============================
+   BLOK 3
+================================ */
+
+.blok3 {
+  background-color: white;
+
+  flex: 1;
+
+  min-height: 520px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ===============================
+   JUDUL BLOK 3
+================================ */
+
+.judulblok3 {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.judulblok3 span {
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+/* ===============================
+   HAPUS SEMUA
+================================ */
+
+.hapussemua {
+  padding: 8px 13px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 7px;
+
+  background-color: white;
+
+  color: #333;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hapussemua:hover {
+  background-color: #d62828;
+
+  color: white;
+
+  border-color: #d62828;
+
+  transform: translateY(-1px);
+}
+
+
+/* ===============================
+   DAFTAR PESERTA
+================================ */
+
+#partisiper {
+  width: 100%;
+}
+
+
+/* PESAN KOSONG */
+
+.tulisankosong {
+  color: #777;
+
+  font-size: 15px;
+}
+
+
+/* ===============================
+   CARD PESERTA
+================================ */
+
+.peserta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 17px;
+
+  margin-bottom: 12px;
+
+  background-color: #fafbff;
+
+  border: 1px solid #e5e7f0;
+
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* HOVER CARD */
+
+.peserta:hover {
+  transform: translateY(-2px);
+
+  border-color: #cfd4f5;
+
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ===============================
+   INFORMASI PESERTA
+================================ */
+
+.informasi-peserta {
+  flex: 1;
+}
+
+.informasi-peserta p {
+  margin-bottom: 7px;
+
+  font-size: 14px;
+
+  color: #444;
+}
+
+.informasi-peserta p:last-child {
+  margin-bottom: 0;
+}
+
+.informasi-peserta strong {
+  color: #111;
+}
+
+
+/* ===============================
+   BUTTON HAPUS PESERTA
+================================ */
+
+.btn-hapus {
+  padding: 8px 13px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background-color: #fff0f0;
+
+  color: #d62828;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-hapus:hover {
+  background-color: #d62828;
+
+  color: white;
+
+  transform: translateY(-1px);
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .blok1 {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .kananblok1 {
+    width: 100%;
+  }
+
+  .induk2dan3 {
+    flex-direction: column;
+  }
+
+  .blok2,
+  .blok3 {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .blok1 {
+    padding: 20px;
+  }
+
+  .tkskiriblok1 h1 {
+    font-size: 24px;
+  }
+
+  .tkskiriblok1 p {
+    font-size: 14px;
+  }
+
+  .blok2,
+  .blok3 {
+    padding: 20px;
+  }
+
+  .peserta {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .btn-hapus {
+    width: 100%;
+  }
+
+}
